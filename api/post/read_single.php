@@ -16,8 +16,8 @@ $post = new Post($db);
 if(isset($_GET['id'])) {
     $post->id = $_GET['id'];
     // Blog post query
-
     $result = $post->read_single();
+
     // get row count
     $num = $result->rowCount();
 
